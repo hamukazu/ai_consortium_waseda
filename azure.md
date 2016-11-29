@@ -27,6 +27,8 @@
 
 ### 自動車データを使った回帰モデルの実験
 
+（以下の手順で*をつけた項目は、内容の確認のためで、必ずしもやらなくてもよい）
+
 1. 左のパネルから「Saved Datasets」→「Samples」→「Automobile price data (Raw)」を選び、右のパネルにドラッグ
 1. *「Automobile price data (Raw)」の出力（箱の下の丸）を右クリックして「Visualize」を選択。データの中身が表示される。
 1. 左のパネルから「Data Transformation」→「Manipulation」→「Select Columns in Dataset」を選び、右のパネルにドラッグ
@@ -49,6 +51,27 @@
 1. 右のパネルで「Evaluate Model」の箱を右クリックし、「Run selected」をクリック。これにより学習と評価が実行される
 1. 「Evaluate Model」の出力を右クリックし、「Visualize」をクリックすると、評価結果が表示される
 
+
+できたらさらに試してみること
+
+* 採用する特徴量を変えたらどうなるだろうか
+* ハイパーパラメータを変更したらどうなるだろうか
+
+## <a name="classification">乳がんのデータを使った分類の実験</a>
+
+1. 左のパネルから「Saved Datasets」→「Samples」→「Breast cancer data」を選び、右のパネルにドラッグ
+1. 左のパネルから「Data Transformation」→「Sample and Split」→「Split Data」を選び、右のパネルにドラッグ
+1. 右のパネルで「Split Data」の入力と「Samples」→「Breast cancer data」の出力をつなぐ
+1. 「Split Data」の箱をクリックし、プロパティの「Fraction of rows in the first output dataset」の値を「0.8」にする
+1. 左のパネルから「Machine Learning」→「Initialize Model」→「Two-Class Logistic Regression」を選び、右のパネルにドラッグ
+1. 左のパネルから「Machine Learning」→「Train」→「Train Model」を選び、右のパネルにドラッグ
+1. 右のパネルで「Train Model」の入力1と「Two-Class Logistic Regression」の出力をつなぎ、「Train Model」の入力2と「Split Data」の出力1をつなぐ
+1. 右のパネルで「Train Model」をクリックし、プロパティで「Launch Column Selector」を選択、「Class」と入力
+1. 右のパネルで「Score Model」の入力1と「Train Model」の出力をつなぎ、「Score Model」の入力2と「Split Data」の出力2をつなぐ
+1. 左のパネルから「Machine Learning」→「Evaluate」→「Evaluate Model」を選び、右のパネルにドラッグ
+1. 右のパネルで「Evaluate Model」の入力1と「Score Model」の出力をつなぐ
+1. 右のパネルで「Evaluate Model」の箱を右クリックし、「Run selected」をクリック。これにより学習と評価が実行される
+1. 「Evaluate Model」の出力を右クリックし、「Visualize」をクリックすると、評価結果が表示される
 
 できたらさらに試してみること
 
