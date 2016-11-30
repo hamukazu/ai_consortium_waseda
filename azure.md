@@ -59,6 +59,8 @@
 
 ## <a name="classification">乳がんのデータを使った分類の実験</a>
 
+上記と同様にして新しいExperimentを作る。
+
 1. 左のパネルから「Saved Datasets」→「Samples」→「Breast cancer data」を選び、右のパネルにドラッグ
 1. 左のパネルから「Data Transformation」→「Sample and Split」→「Split Data」を選び、右のパネルにドラッグ
 1. 右のパネルで「Split Data」の入力と「Samples」→「Breast cancer data」の出力をつなぐ
