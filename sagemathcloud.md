@@ -1,7 +1,6 @@
 # Sage Math Cloundを使った演習
 
 [Sage Math Cloud](http://cloud.sagemath.com)を使ってPythonを動かす実習を行う。
-以下の例のいくつかは「データサイエンティスト機械学習入門編」（以下「養成読本」と略す）掲載のソースコードを一部手直ししたもので、それらの動作の仕組みの詳細については養成読本を参照のこと。
 
 ## <a name="a">プロジェクトとPython実行用ノートブックの作成</a>
 
@@ -17,8 +16,10 @@
 1. 「Jupyter Notebook」ボタンを押す
 
 
-##　乱数データを使った線形回帰の実験
-（養成読本参照）
+## 簡単な例
+以下の例は「データサイエンティスト機械学習入門編」（以下「養成読本」と略す）掲載のソースコードを一部手直ししたもので、それらの動作の仕組みの詳細については養成読本を参照のこと。
+
+###　乱数データを使った線形回帰の実験
 
 ```python
 import numpy as np
@@ -43,7 +44,7 @@ plt.plot(xr, lin.coef_ * xr + lin.intercept_)
 plt.scatter(regdata[0], regdata[1])
 ```
 
-## 糖尿病データを使った予測
+### 糖尿病データを使った予測
 （養成読本参照）
 
 ```python
@@ -70,7 +71,7 @@ print("Prediction :", lin.predict(data_test[0].reshape(1,-1)))  # 予想
 print("Actual value :", target_test[0])  # 実際の値
 ```
 
-## あやめデータによる二値分類
+### あやめデータによる二値分類
 （養成読本参照）
 
 ```python
@@ -93,7 +94,7 @@ scores = cross_validation.cross_val_score(logi, data, target, cv=5)
 print(scores)
 ```
 
-## 交差検定の例
+### 交差検定の例
 （養成読本参照）
 
 ```python
@@ -113,7 +114,7 @@ print(scores)
 print("Accuracy:", scores.mean())
 ```
 
-## あやめの分類の可視化
+### あやめの分類の可視化
 （養成読本参照）
 
 ```python
