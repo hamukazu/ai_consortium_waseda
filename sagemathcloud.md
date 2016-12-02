@@ -45,7 +45,6 @@ plt.scatter(regdata[0], regdata[1])
 ```
 
 ### 糖尿病データを使った予測
-（養成読本参照）
 
 ```python
 from sklearn import linear_model, datasets
@@ -72,7 +71,6 @@ print("Actual value :", target_test[0])  # 実際の値
 ```
 
 ### あやめデータによる二値分類
-（養成読本参照）
 
 ```python
 import sklearn.datasets as datasets
@@ -95,7 +93,6 @@ print(scores)
 ```
 
 ### 交差検定の例
-（養成読本参照）
 
 ```python
 from sklearn import datasets
@@ -115,7 +112,6 @@ print("Accuracy:", scores.mean())
 ```
 
 ### あやめの分類の可視化
-（養成読本参照）
 
 ```python
 from sklearn import datasets
