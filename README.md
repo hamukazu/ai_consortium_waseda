@@ -11,5 +11,6 @@
 
 ## Sage Math Cloud
 
-1. [プロジェクトの作成](sagemathcloud.md#1)
+1. [プロジェクトとPython実行用ノートブックの作成](sagemathcloud.md#a)
+1. [簡単な例](sagemathcloud.md#b)
 
