@@ -148,3 +148,7 @@ for i, c in zip([0, 1, 2], ["r", "g", "b"]):
     d = data[iris.target == i]
     plt.scatter(d[:, 0], d[:, 1], c=c)
 ```
+
+## 簡易レコメンデーションシステムの実装
+
+[こちら](recommender.html)を参照。
