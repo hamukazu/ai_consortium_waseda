@@ -13,4 +13,4 @@
 
 1. [プロジェクトとPython実行用ノートブックの作成](sagemathcloud.md#a)
 1. [簡単な例](sagemathcloud.md#b)
-
+1. [簡易レコメンデーションシステムの実装](sagemathcloud.md#c)
