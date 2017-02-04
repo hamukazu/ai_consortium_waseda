@@ -153,7 +153,7 @@ for i, c in zip([0, 1, 2], ["r", "g", "b"]):
 
 [こちら](https://hamukazu.github.io/ai_consortium_waseda/recommender.html)を参照。
 
-## <a name="d"日経平均株価の予測</a>
+## <a name="d">日経平均株価の予測</a>
 
 [こちら](https://hamukazu.github.io/ai_consortium_waseda/nikkei_index.html)を参照。
 
