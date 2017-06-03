@@ -19,3 +19,7 @@
 ## TensorFlow
 
 1. [MNIST（手書き文字認識）の実験](tensorflow.md)
+
+## 自然言語処理
+
+1. [Reutersニュースデータの分類](https://hamukazu.github.io/ai_consortium_waseda/reuters.html)
